@@ -1,0 +1,23 @@
+hui 1.4.0 (formerly 拾一 / Shiyi)
+
+The clipboard and Chinese voice modules are based on the user's existing MaClipHistory customization and Voice Demo.
+MaClipHistory upstream: https://github.com/marizombie/mcliphistory
+License: see MaClipHistory-LICENSE.
+
+The menu-bar module incorporates modified Ice 0.11.13-dev.2 source directly into the Shiyi executable. It does not launch a separate Ice application.
+Ice: Copyright Jordan Baird and contributors.
+Source: https://github.com/jordanbaird/Ice/tree/0.11.13-dev.2
+License: GPL-3.0; see Ice-LICENSE.
+Original source archive: Ice-0.11.13-dev.2-source.tar.gz.
+Modified source is included in the Shiyi source package under Vendor/IceCore.
+Static dependencies and their license files are included under Vendor/Dependencies.
+Local integration changes include in-process menu management and source-process lookup, Shiyi navigation, and panel animation. Sparkle and the separate menu-bar XPC service are not included in this build.
+
+Menu-bar event safety and AXPress activation incorporate adaptations from Thaw.
+Thaw: Copyright (Ice) 2023–2025 Jordan Baird; Copyright (Thaw) 2026 Toni Förster.
+Source: https://github.com/thaw-app/Thaw/tree/2f5818785b3909d63e71a358e42a5fc313741476
+Relevant files: MenuBarItemManager+EventHelpers.swift, MenuBarItemManager+Move.swift, AXItemActivator.swift, ClickReactionVerifier.swift.
+License: GNU GPLv3, the same license included in Ice-LICENSE.
+Adapted source is included under Vendor/IceCore/Ice/Utilities and MenuBar/MenuBarItems in the modified source package.
+
+hui is a local integration build, not an official release of Ice or MaClipHistory.

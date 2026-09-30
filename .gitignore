@@ -1,0 +1,14 @@
+.build/
+dist/
+.DS_Store
+.swiftpm/
+SigningIdentity.sha1
+.env
+.env.*
+.dev.vars
+.secrets/
+*.p12
+*.pfx
+*.key
+*.pem
+*.log
